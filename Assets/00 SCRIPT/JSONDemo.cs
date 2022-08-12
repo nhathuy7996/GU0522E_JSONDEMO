@@ -11,14 +11,14 @@ public class JSONDemo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        jsonData = PlayerPrefs.GetString("DATA");
-        var dataParsed = JSON.Parse(jsonData).AsArray;
+        //jsonData = PlayerPrefs.GetString("DATA");
+        //var dataParsed = JSON.Parse(jsonData).AsArray;
 
 
-        foreach (JSONNode data in dataParsed)
-        {
-            Debug.LogError(data["name"]);
-        }
+        //foreach (JSONNode data in dataParsed)
+        //{
+        //    Debug.LogError(data["name"]);
+        //}
 
         //DataUser dataParsed = JsonUtility.FromJson<DataUser>(jsonData);
         //Debug.LogError(dataParsed.HP);
@@ -31,13 +31,13 @@ public class JSONDemo : MonoBehaviour
 
         //Debug.LogError(JsonUtility.ToJson(data));
 
-        StartCoroutine(GetRequest("https://gu0522e-json-default-rtdb.asia-southeast1.firebasedatabase.app/.json"));
+        //StartCoroutine(GetRequest("https://gu0522e-json-default-rtdb.asia-southeast1.firebasedatabase.app/.json"));
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //Debug.Log();
     }
 
     IEnumerator GetRequest(string uri)
